@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="media/graaslogo.jpg">
+    <title> internship Inqury Form</title>
+    <style>       
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #09086b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #32e4ff;
+} 
+    </style>
+</head>
+<body>
+
+    <header style="background-color: #32e4ff; font-weight: 600; color: black; text-align: center;">
+        <h1> Internship Inquiry Form</h1>
+        <h4> THANK YOU <h4>
+    </header>
+
+
+
+<form id="internshipInquiryForm">
+    <label for="name"> Enter Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Enter Email Id:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone"> Enter Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="intention"> Enter Internship Duration:</label>
+    <select id="Internship" name="Internship" required>
+        <option value="Duration">30 Days</option>
+        <option value="Duration">45 Days</option>
+        <option value="Duration">2 Month</option>
+        <option value="Duration">4 Month</option>
+        <option value="Duration">6 Month</option>
+        <option value="Duration">8 Month</option>
+    </select>
+
+   
+
+    <label for="location">Choose Location:</label>
+    <select id="location" name="location" required>
+        <option value="city1">Jaipur</option>
+        <option value="city2"> Delhi </option>
+        <option value="city3">Ahmedabad</option>
+    </select>
+
+    <label for="message">Add A Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
